@@ -1,8 +1,11 @@
 import UseStateDemo from "./UseStateDemo";
 import UseEffectDemo from "./UseEffectDemo";
+import UseLayoutEffectDemo from "./UseLayoutEffectDemo";
+import UseRefDemo from "./UseRefDemo";
+import ComponentCha from "./UseCallbackMemo/ComponentCha";
 import { useState } from "react";
 const DashBroad = () => {
-  const [ismount, setIsMount] = useState(false);
+  const [isMount, setIsMount] = useState(false);
   return (
     <>
       <button
@@ -17,10 +20,15 @@ const DashBroad = () => {
       >
         Ummount
       </button>
-      {
-        // <UseStateDemo />
-        ismount && <UseEffectDemo />
-      }
+      <div style={{ marginLeft: 250 }}>
+        {
+          //isMount &&  <UseStateDemo />
+          //isMount && <UseEffectDemo />
+          // isMount && <UseLayoutEffectDemo/>
+          //isMount && <UseRefDemo />
+          isMount && <ComponentCha/> // demo React.memo() và useCallBack();
+        }
+      </div>
     </>
   );
 };

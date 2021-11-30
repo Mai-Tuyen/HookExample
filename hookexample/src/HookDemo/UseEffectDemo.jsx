@@ -11,9 +11,11 @@ const UseEffectDemo = () => {
   const handleChangeInput = (e) => {
     setName(e.target.value);
   };
+  console.log("Đây là bước render UI nè !!!!!");
   return (
     <div style={{marginLeft: 100, marginTop: 100}}>
       <input onChange={(e) => handleChangeInput(e)} />
+      <div style={{fontSize: 50}}>{name}</div>
     </div>
   );
 };
