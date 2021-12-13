@@ -24,11 +24,11 @@ const DashBroad = () => {
       <div style={{ marginLeft: 250 }}>
         {
           // isMount && <UseStateDemo />
-          //isMount && <UseEffectDemo />
+          isMount && <UseEffectDemo />
           // isMount && <UseLayoutEffectDemo/>
           //isMount && <UseRefDemo />
           // isMount && <ComponentCha /> // demo React.memo() và useCallBack();
-          isMount && <UseMemoDemo />
+          // isMount && <UseMemoDemo />
         }
       </div>
     </>
