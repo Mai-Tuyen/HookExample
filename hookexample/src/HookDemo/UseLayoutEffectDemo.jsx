@@ -3,7 +3,7 @@ import { useState, useEffect, useLayoutEffect } from "react";
 const UseLayoutEffectDemo = () => {
   const [count, setCount] = useState(0);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (count > 3) {
       setCount(0);
     }

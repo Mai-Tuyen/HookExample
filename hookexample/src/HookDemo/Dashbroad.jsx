@@ -5,6 +5,7 @@ import UseRefDemo from "./UseRefDemo";
 import ComponentCha from "./UseCallbackMemo/ComponentCha";
 import { useState } from "react";
 import UseMemoDemo from "./UseMemoDemo";
+import UseReducerDemo from "./UseReducerDemo";
 const DashBroad = () => {
   const [isMount, setIsMount] = useState(false);
   return (
@@ -24,11 +25,12 @@ const DashBroad = () => {
       <div style={{ marginLeft: 250 }}>
         {
           // isMount && <UseStateDemo />
-          isMount && <UseEffectDemo />
-          // isMount && <UseLayoutEffectDemo/>
-          //isMount && <UseRefDemo />
+          // isMount && <UseEffectDemo />
+          // isMount && <UseLayoutEffectDemo />
+          // isMount && <UseRefDemo />
           // isMount && <ComponentCha /> // demo React.memo() và useCallBack();
           // isMount && <UseMemoDemo />
+          isMount && <UseReducerDemo />
         }
       </div>
     </>
